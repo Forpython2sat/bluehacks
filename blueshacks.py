@@ -2,10 +2,7 @@ import streamlit as st
 import pandas as pd
  
 st.write("""
-# My first app
-Hello *world!*
+Breaking Barriers - Blues Project Idea
 """)
- 
-st.write("""
-When will Andi Guo stop tying randoms in gym?
-""")
+
+number = st.slider("Pick a number", 0, 100)
