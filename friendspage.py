@@ -17,11 +17,11 @@ for message in st.session_state.messages:
 prompt = st.chat_input('Say something')
 counter = -1
 if prompt:
+    counter += 1
     with st.chat_message("user"):
         st.markdown(prompt)
-        counter += 1
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    response = outl[counter]
+    st.session_state.messages.append({"role": "user", "content": prompt, 'counter': counter})
+    response = prompt
     with st.chat_message('ai'):
         st.markdown(response)
-    st.session_state.messages.append({'role': 'ai', 'content': response})
+    st.session_state.messages.append({'role': 'ai', 'content': response, 'counter': counter})
