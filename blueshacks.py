@@ -1,4 +1,4 @@
-import streamlet as st
+import streamlit as st
  
 st.write("""
 Breaking Barriers - Blues Project Idea
