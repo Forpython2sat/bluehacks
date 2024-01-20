@@ -1,5 +1,9 @@
 import streamlit as st
- 
+from streamlit_js_eval import streamlit_js_eval
+
+st.write(f"Screen width is {streamlit_js_eval(js_expressions='window.innerWidth', key = 'SCR')}")
+st.write(f"Screen height is {streamlit_js_eval(js_expressions='window.innnerHeight', key = 'SCR1')}")
+
 st.write("""
 joe biden
 """)
