@@ -26,6 +26,4 @@ if prompt:
     response = prompt
     with st.chat_message('ai'):
         st.markdown(response)
-        st.write(message)
     st.session_state.messages.append({'role': 'ai', 'content': response, 'counter': counter})
-    
