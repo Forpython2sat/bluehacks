@@ -3,9 +3,14 @@ import streamlit as st
 #This will be the page that will be redirected when the interact with a peer/friend button is clicked
 animal_shelter = ['cat', 'dog', 'rabbit', 'bird']
 
-animal = st.chat_input('Type an animal')
+with st.chat_message("user"):
+    st.write("Hello 👋")
+    st.write("Let us learn how to communicate effectively with peers and friends!")
 
-if animal:
-    if st.button('Check availability'):
-        have_it = animal.lower() in animal_shelter
-        'We have that animal!' if have_it else 'We don\'t have that animal.'
+inp = st.chat_input('Type to continue: ')
+
+if inp:
+    if st.button('Learn to strike up a conversation'):
+            st.write('''Often, our conversations are cut short after a simple "hello," and we are launched into a state of awkwardness.''')
+            st.write("According to psychology, however, people typically tend to engage more when the conversation is something that concerns them or interests them.")
+            st.write("Therefore, if you know that something has been on their minds, talk to them about it.")
