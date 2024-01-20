@@ -1,26 +1,27 @@
 import streamlit as st
 
-if 'clicked' not in st.session_state:
-    st.session_state.clicked = False
+outl = ['We will first learn how to open conversations. Opening conversations are sometimes quite challenging, and often times, the conversation halts after an exchange of greetings. What would you do to prevent this from happening?', 'Usually, we should talk about something that they are interested in. Psychology shows that humans tend to engage more when something is about them, or if something interests them. Thus, next time you see your friend, ask him whats going good for him, what may be troubling him, and also ask him about his hobbies.']
 
-def click_button():
-    st.session_state.clicked = True
+if "messages" not in st.session_state:
+    st.sessions_state.messages = []
 
-ai = st.chat_message('ai')
-user = st.chat_message('user')
+with st.chat_message('ai'):
+    st.write('"Hello 👋"')
+    st.write("Today, we will learn how to effectively communicate with our peers.")
+    st.write("Type something to continue.")
 
-ai.write("Hello 👋")
-ai.write("Let us learn how to communicate effectively with peers and friends!")
-ai.write("Click any button to get started")
+for message in st.session_state.messages:
+    with st.chat_message(message['role']):
+        st.markdown(message['content'])
 
-a = st.button('Learn to strike up a conversation', on_click=click_button)
-b = st.button('Learn to elegantly decline', on_click=click_button)
-
-if a.session_state.clicked:
-    ai.write('''Often, our conversations are cut short after a simple "hello," and we are launched into a state of awkwardness.''')
-    ai.write("According to psychology, however, people typically tend to engage more when the conversation is something that concerns them or interests them.")
-    ai.write("Therefore, if you know that something has been on their minds, talk to them about it.")
-if b.session_state.clicked:
-    ai.write("Often our friends can unkowningly ask us something that we are uncomfortable with.")
-    ai.write("Therefore, it is essential to know how to decline.")
-    ai.write("Usually, it is best to be up front about it, and hold your ground despite the pressure.")
+prompt = st.chat_input('Say something')
+counter = 0
+if prompt:
+    with st.chat_message("user"):
+        st.markdown(prompt)
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    response = outl[counter]
+    counter += 1
+    with st.chat_message('ai'):
+        st.markdown(response)
+    st.session_state.messages.append({'role': 'ai', 'content': response})
