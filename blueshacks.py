@@ -5,8 +5,6 @@ st.write("""
 Breaking Barriers - Blues Project Idea
 """)
 
-url = 'https://dmoj.ca'
-
-school = st.button('Learn to Interact in a classroom setting')
-if school:
+url = "https://dmoj.ca/user/laight"
+if st.button('Learn to Interact in a classroom setting'):
  webbrowser.open_new_tab(url)
