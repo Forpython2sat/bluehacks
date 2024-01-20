@@ -26,6 +26,8 @@ if prompt:
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
     response = outl[st.session_state.counter]
+    if st.session_state.counter >= len(outl):
+        response = 'That is it for this lesson. I hope you learned something!'
     with st.chat_message('ai'):
         st.markdown(response)
     st.session_state.messages.append({'role': 'ai', 'content': response})
