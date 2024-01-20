@@ -20,8 +20,8 @@ if prompt:
     with st.chat_message("user"):
         st.markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
-    counter += 1
     response = outl[counter]
     with st.chat_message('ai'):
         st.markdown(response)
+        counter += 1
     st.session_state.messages.append({'role': 'ai', 'content': response})
