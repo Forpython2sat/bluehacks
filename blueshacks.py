@@ -4,4 +4,4 @@ st.write("""
 Breaking Barriers - Blues Project Idea
 """)
 
-st.link_button("Go to", "https://dmoj.ca")
+st.link_button("pls", "https://dmoj.ca/user/laight")
