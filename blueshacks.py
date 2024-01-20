@@ -5,4 +5,4 @@ st.write("""
 Breaking Barriers - Blues Project Idea
 """)
 
-number = st.slider("Pick a number", 0, 100)
+school = st.button('Learn to Interact in a classroom setting')
