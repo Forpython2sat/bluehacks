@@ -2,6 +2,8 @@ import streamlit as st
 
 outl = ['We will first learn how to open conversations. Opening conversations are sometimes quite challenging, and often times, the conversation halts after an exchange of greetings. What would you do to prevent this from happening?', 'Usually, we should talk about something that they are interested in. Psychology shows that humans tend to engage more when something is about them, or if something interests them. Thus, next time you see your friend, ask him whats going good for him, what may be troubling him, and also ask him about his hobbies.']
 
+user = st.chat_message('user')
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
@@ -25,3 +27,5 @@ if prompt:
     with st.chat_message('ai'):
         st.markdown(response)
     st.session_state.messages.append({'role': 'ai', 'content': response, 'counter': counter})
+    user.write(message)
+    
