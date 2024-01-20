@@ -1,8 +1,7 @@
 import streamlit as st
  
 st.write("""
-Breaking Barriers - Blues Project Idea
-pee
+joe biden
 """)
 
 htp="https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher.png"
