@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.header("Welcome to Learning to Communicate")
+st.write("Welcome to Chatbot Lessons")
+st.write("Chatbot Lessons is an interactive platform designed to help you improve your communication skills in various scenarios. Our lessons cover different aspects of communication, from interacting with teachers to engaging with strangers.")
+st.write("Explore the lessons below and enhance your communication skills.")
+
 col1, col2 = st.columns([0.5, 0.5])
 
 with col1:
