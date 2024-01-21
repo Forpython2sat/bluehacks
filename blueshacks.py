@@ -1,17 +1,15 @@
 import streamlit as st
 
 col1, col2, col3 = st.columns(3)
-container_width = st.get_container_width
-screen_width = st.screen_width
-st.write(screen_width)
 
 with col1:
-  st.header('Interacting With Teachers')
-  st.link_button("Learn to be heard in the classroom", "https://blueshackst.streamlit.app/")
-
+  st.header('Interact in a Classroom Environment')
+  st.link_button("Learn to Interact in a Classroom Environment", "https://blueshackst.streamlit.app/")
+  image1 = https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher.png
+  st.image(image1)
 with col2:
-  st.header('Interacting with peers')
-  st.link_button("Learn to ", "https://blueshacks2.streamlit.app/")
+  st.header('Interact Smoother with Your Peers')
+  st.link_button("Learn to Interact Smoothly with Peers", "https://blueshacks2.streamlit.app/")
 with col3:
   st.header('Questionaires and Quizes to Test Your Knowledge')
   st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")
