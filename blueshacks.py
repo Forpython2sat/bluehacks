@@ -4,7 +4,7 @@ col1, col2 = st.columns([0.5, 0.5])
 
 with st.container():
   with col1:
-    st.header('Interact in a Classroom Environment')
+    st.header('Interact in a Class Environment')
     image1 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher.png"
     st.image(image1)
     st.link_button("Learn to Interact in a Classroom Environment", "https://blueshackst.streamlit.app/")
