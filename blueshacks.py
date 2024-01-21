@@ -1,6 +1,6 @@
 import streamlit as st
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns([0.3, 0.3, 0.3])
 
 with col1:
   st.header('Interact in a Classroom Environment')
