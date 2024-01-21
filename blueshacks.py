@@ -7,7 +7,7 @@ with col1:
     st.header('Lesson 1: Teachers')
     image1 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher.png"
     st.image(image1)
-    st.link_button("Learn to Interact in a Classroom Environment", "https://blueshackst.streamlit.app/")
+    st.link_button("Learn to Interact in a Classroom Environment", "https://bluehacks-menu.streamlit.app")
   st.header('Lesson 3: Professionals')
   image3 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher2.png"
   st.image(image3)
