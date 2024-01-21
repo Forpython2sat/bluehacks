@@ -2,6 +2,8 @@ import streamlit as st
 
 col1, col2 = st.columns([0.5, 0.5])
 
+st.header('Learn how to Communicate Effectively')
+
 with col1:
   with st.container():
     st.header('Lesson 1: Teachers')
