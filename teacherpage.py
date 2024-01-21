@@ -1,4 +1,5 @@
 import streamlit as st
+import sys
 
 outl = ["1. Address them with their appropriate title (i.e. Mr., Ms., Dr., Professor, etc). Understood?", "2. Be polite and use formal language, especially in educational settings. Got that?", "3. Ask questions when you need clarification on a topic. Don't be afraid!", "4. Listen actively and engage in discussions related to the subject. And that is it!", "Good luck communicating!" ]
 
@@ -27,6 +28,10 @@ if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
     if st.session_state.counter >= len(outl):
         response = 'That is it for this lesson. I hope you learned something!'
+        st.write("Below is a quiz going through the information you've learned today. Give it a try!")
+        st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")
+        sys.exit()
+        
     else:
         response = outl[st.session_state.counter]
     with st.chat_message('ai'):
