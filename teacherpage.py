@@ -13,7 +13,7 @@ if 'counter' not in st.session_state:
 
 with st.chat_message('ai'):
     st.write('"Hello 👋"')
-    st.write("Today, we will learn how to effectively communicate with a teacher.")
+    st.write("Today, we will learn how to communicate effectively with a teacher.")
     st.write("Remember to: ")
     
 for message in st.session_state.messages:
