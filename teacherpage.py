@@ -1,6 +1,6 @@
 import streamlit as st
 
-outl = ['Lesson 1: Interacting with a Teacher', "1. Address them with their appropriate title (i.e. Mr., Ms., Dr., Professor, etc).", "2. Be polite and use formal language, especially in educational settings.", "3. Ask questions when you need clarification on a topic.", "4. Listen actively and engage in discussions related to the subject." ]
+outl = ["1. Address them with their appropriate title (i.e. Mr., Ms., Dr., Professor, etc). Understood?", "2. Be polite and use formal language, especially in educational settings. Got that?", "3. Ask questions when you need clarification on a topic. Don't be afraid!", "4. Listen actively and engage in discussions related to the subject. And that is it!", "Good luck communicating!" ]
 
 def counterplus():
     st.session_state.counter += 1
@@ -14,7 +14,7 @@ if 'counter' not in st.session_state:
 with st.chat_message('ai'):
     st.write('"Hello 👋"')
     st.write("Today, we will learn how to communicate effectively with a teacher.")
-    st.write("Remember to: ")
+    st.write("Are you ready to start?")
     
 for message in st.session_state.messages:
     with st.chat_message(message['role']):
