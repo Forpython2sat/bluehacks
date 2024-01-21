@@ -25,8 +25,12 @@ with col3:
   with st.container():
     st.header("Lesson 3: Email Etiquette")
     st.link_button("How to compose an effective email", "https://blueshacks2.streamlit.app/")
+  st.header('Lesson 3: Professionals')
+  st.link_button("Learn to Communicate with Professionals", "https://bluehacks-3.streamlit.app")
 
 with col4:
   with st.container():
     st.header("Lesson 4: osama")
     st.link_button("How to compose an effective email", "https://blueshacks2.streamlit.app/")
+  st.header('Lesson 3: Professionals')
+  st.link_button("Learn to Communicate with Professionals", "https://bluehacks-3.streamlit.app")
