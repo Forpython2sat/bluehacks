@@ -37,5 +37,5 @@ if prompt:
     with st.chat_message('ai'):
         st.markdown(response)
         if st.session_state.checker:
-            st.link_button("Lesson 3 Quiz", "https://b407031c-3d95-4e7b-b8db-3eae7d1f240d-00-2tq3v4cwm7zqd.janeway.replit.dev")
+            st.link_button("Lesson 4 Quiz", "https://0f0c1507-87bb-4da5-aedc-4a5e9f795bf1-00-2yb8dchn9mbx1.kirk.replit.dev")
     st.session_state.messages.append({'role': 'ai', 'content': response})
