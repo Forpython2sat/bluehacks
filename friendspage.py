@@ -27,7 +27,6 @@ if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
     if st.session_state.counter >= len(outl):
         response = ('''That is it for this lesson. I hope you learned something!
-                    Below is a quiz going through the information you've learned today. Give it a try!''')     
                     Below is a quiz going through the information you've learned today. Give it a try!''')    
         st.session_state.checker = True
     else:
