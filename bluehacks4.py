@@ -2,6 +2,9 @@ import streamlit as st
 
 outl = ['1. Start with a polite greeting.', '2. Be open and approachable. Keep in mind that strangers may not share the same interests that you do.', '3. Listen actively.', '4. Respect the personal boundaries of others.']
 
+def counterplus():
+    st.session_state.counter += 1
+
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
