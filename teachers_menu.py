@@ -7,7 +7,7 @@ with col1:
     st.header('Lesson 1: Basics')
     image1 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(10).png"
     st.image(image1)
-    st.link_button("Review your skills ", "https://blueshackst.streamlit.app/")
+    st.link_button("Review your skills", "https://blueshackst.streamlit.app/")
   st.header('Lesson 5: Projects')
   image5 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(11).png"
   st.image(image5)
@@ -33,7 +33,7 @@ with col3:
   st.header('Lesson 7: Engaging')
   image7 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(14).png"
   st.image(image7)
-  st.link_button("Participate in class", "https://bluehacks-3.streamlit.app")
+  st.link_button("Leaern to participate in class", "https://bluehacks-3.streamlit.app")
 
 with col4:
   with st.container():
