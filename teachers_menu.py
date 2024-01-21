@@ -11,14 +11,14 @@ with col1:
   st.header('Lesson 5: Projects')
   image5 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(11).png"
   st.image(image5)
-  st.link_button("Learn to Communicate with Professionals", "https://bluehacks-3.streamlit.app")
+  st.link_button("Cooperate better with your peers", "https://bluehacks-3.streamlit.app")
   
 with col2:
   with st.container():
     st.header('Lesson 2: Questions')
     image2 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(12).png"
     st.image(image2)
-    st.link_button("Get help in class", "https://blueshacks2.streamlit.app/")
+    st.link_button("Clarify class content", "https://blueshacks2.streamlit.app/")
   st.header('Lesson 6: Extensions')
   image6 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(13).png"
   st.image(image6)
