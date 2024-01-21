@@ -30,7 +30,7 @@ with col3:
     image3 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(15).png"
     st.image(image3)
     st.link_button("Compose effective emails", "https://blueshacks2.streamlit.app/")
-  st.header('Lesson 7: Participating')
+  st.header('Lesson 7: Engaging')
   image7 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(14).png"
   st.image(image7)
   st.link_button("Participate in class", "https://bluehacks-3.streamlit.app")
