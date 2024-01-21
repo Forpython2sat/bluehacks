@@ -1,5 +1,0 @@
-streamlit
-gTTS
-googletrans
-SpeechRecognition
-PyDub
