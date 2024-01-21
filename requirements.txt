@@ -1,5 +1,5 @@
 streamlit
-gtts
+gTTS
 googletrans
-speech_recognition
+SpeechRecognition
 PyDub
