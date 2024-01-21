@@ -35,5 +35,5 @@ if prompt:
         st.markdown(response)
     st.session_state.messages.append({'role': 'ai', 'content': response})
     if st.session_state.counter >= len(outl):
-        st.write("Below is a quiz going through the information you've learned today. Give it a try!")
+        st.markdown("Below is a quiz going through the information you've learned today. Give it a try!")
         st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")
