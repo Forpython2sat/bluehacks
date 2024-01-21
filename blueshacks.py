@@ -2,9 +2,6 @@ import streamlit as st
 
 col1, col2 = st.columns([0.5, 0.5])
 
-with st.container():
-  st.header('Learn how to Communicate Effectively')
-
 with col1:
   with st.container():
     st.header('Lesson 1: Teachers')
@@ -14,7 +11,7 @@ with col1:
   st.header('Lesson 3: Professionals')
   image3 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/teacher2.png"
   st.image(image3)
-  st.link_button("Learn to Interact Smoothly with Peers", "https://bluehacks-3.streamlit.app")
+  st.link_button("Learn to Communicate with Professionals", "https://bluehacks-3.streamlit.app")
     
   
 with col2:
@@ -26,4 +23,4 @@ with col2:
   st.header('Lesson 4: Strangers')
   image4 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(2).png"
   st.image(image4)
-  st.link_button("Learn to Interact Smoothly with Peers", "https://bluehacks-4.streamlit.app")
+  st.link_button("Learn to Talk with Strangers", "https://bluehacks-4.streamlit.app")
