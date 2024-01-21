@@ -28,7 +28,7 @@ if prompt:
     if st.session_state.counter >= len(outl):
         response = ('''That is it for this lesson. I hope you learned something!
                     Below is a quiz going through the information you've learned today. Give it a try!''')
-        st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/"))      
+        st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")      
     else:
         response = outl[st.session_state.counter]
     with st.chat_message('ai'):
