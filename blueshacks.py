@@ -21,6 +21,6 @@ with col2:
     st.image(image2)
     st.link_button("Learn to Interact Smoothly with Peers", "https://blueshacks2.streamlit.app/")
   st.header('Lesson 4: Strangers')
-  image3 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(2).png"
+  image4 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(2).png"
   st.image(image4)
   st.link_button("Learn to Interact Smoothly with Peers", "https://bluehacks-4.streamlit.app")
