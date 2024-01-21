@@ -11,6 +11,9 @@ if "messages" not in st.session_state:
 if 'counter' not in st.session_state:
     st.session_state.counter = -1
 
+if 'checker' not in st.session_state:
+    st.session_state.checker = False
+
 with st.chat_message('ai'):
     st.write('"Hello 👋"')
     st.write("Today, we will learn how to communicate effectively with a teacher.")
@@ -27,11 +30,12 @@ if prompt:
     st.session_state.messages.append({"role": "user", "content": prompt})
     if st.session_state.counter >= len(outl):
         response = ('''That is it for this lesson. I hope you learned something!
-                    Below is a quiz going through the information you've learned today. Give it a try!''')     
+                    Below is a quiz going through the information you've learned today. Give it a try!''')    
+        st.session_state.checker = True
     else:
         response = outl[st.session_state.counter]
+        if st.session_state.checker:
+            st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")
     with st.chat_message('ai'):
         st.markdown(response)
-    if st.session_state.counter >= len(out1):
-        st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/") 
     st.session_state.messages.append({'role': 'ai', 'content': response})
