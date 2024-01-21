@@ -15,8 +15,8 @@ if 'checker' not in st.session_state:
     st.session_state.checker = False
 
 with st.chat_message('ai'):
-    st.write('"Hello 👋"')
-    st.write("Today, we will learn how to communicate effectively with a teacher.")
+    st.write('Hello! 👋')
+    st.write("Today, we will learn the basics of communicating with a teacher.")
     st.write("Are you ready to start?")
     
 for message in st.session_state.messages:
