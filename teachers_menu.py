@@ -27,7 +27,7 @@ with col2:
 with col3:
   with st.container():
     st.header("Lesson 3: Email Etiquette")
-    image3 = "https://github.com/Forpython2sat/bluehacks/blob/main/art/Untitled%20(15).png"
+    image3 = "https://raw.githubusercontent.com/Forpython2sat/bluehacks/main/art/Untitled%20(15).png"
     st.image(image3)
     st.link_button("How to compose an effective email", "https://blueshacks2.streamlit.app/")
   st.header('Lesson 7: In-Class Conversation')
