@@ -1,6 +1,8 @@
 import streamlit as st
 
-outl = ["1. Address them with their appropriate title (i.e. Mr., Ms., Dr., Professor, etc). Understood?", "2. Be polite and use formal language, especially in educational settings. Got that?", "3. Ask questions when you need clarification on a topic. Don't be afraid!", "4. Listen actively and engage in discussions related to the subject. And that is it!", "Good luck communicating!" ]
+outl = ['We will first learn how to open conversations. Opening conversations are sometimes quite challenging, and often times, the conversation halts after an exchange of greetings. What would you do to prevent this from happening?', 'Usually, we should talk about something that they are interested in. Psychology shows that humans tend to engage more when something is about them, or if something interests them. Thus, next time you see your friend, ask him whats going good for them, what may be troubling him, and also ask them about their hobbies.']
+
+def counterplus():
 
 def counterplus():
     st.session_state.counter += 1
@@ -16,7 +18,7 @@ if 'checker' not in st.session_state:
 
 with st.chat_message('ai'):
     st.write('"Hello 👋"')
-    st.write("Today, we will learn how to communicate effectively with a teacher.")
+    st.write("Today, we will learn how to effectively communicate with our peers.")
     st.write("Are you ready to start?")
     
 for message in st.session_state.messages:
@@ -37,5 +39,5 @@ if prompt:
     with st.chat_message('ai'):
         st.markdown(response)
         if st.session_state.checker:
-            st.link_button("Lesson 1 Quiz", "https://1e12b53b-1124-4840-b699-e696e74c47be-00-1tulldaqgf3jp.janeway.replit.dev/")
+            st.link_button("Lesson 2 Quiz", "https://4248fbdf-37ea-423a-964b-16e6fba16303-00-x94itf3kt79e.spock.replit.dev")
     st.session_state.messages.append({'role': 'ai', 'content': response})
